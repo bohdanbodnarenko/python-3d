@@ -32,8 +32,6 @@ def import_to_maya_and_export(files_dir_path):
 def main():
     cwd = os.getcwd()
 
-    # TODO investigate problems with dif paths
-
     downloaded_files = download_files_from_s3(['Male_Height_02_Rig.fbx'],
                                               'Male/Height_02/', 'fbx',
                                               os.path.join(cwd, 'fbxs'))
